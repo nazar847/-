@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё космическое био</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        
+        #galaxy {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00f7ff;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #00f7ff;
+            transform: scale(1.2);
+        }
+        
+        .soundcloud-player {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- 3D Galaxy Background -->
+    <iframe id="galaxy" src="https://www.shadertoy.com/embed/XtBXDw?gui=false&t=10&paused=false&muted=false" frameborder="0"></iframe>
+    
+    <div class="content">
+        <h1>МОЁ КОСМИЧЕСКЕ БИО</h1>
+        <p>Добро пожаловать в мой музыкальный космос. Слушайте треки и следите за творчеством!</p>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/ваш_ник" target="_blank">📷</a>
+            <a href="https://t.me/ваш_ник" target="_blank">✈️</a>
+            <a href="https://tiktok.com/ваш_ник" target="_blank">🎵</a>
+        </div>
+        
+        <!-- SoundCloud Player -->
+        <div class="soundcloud-player">
+            <!-- ВСТАВЬТЕ СВОЙ EMBED-КОД ИЗ SOUNDCLOUD -->
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=ВАША_ССЫЛКА_НА_ТРЕК&color=ff5500"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        // Автоматическое обновление 3D фона
+        document.getElementById('galaxy').style.pointerEvents = 'none';
+    </script>
+</body>
+</html>
